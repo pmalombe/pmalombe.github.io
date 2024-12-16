@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Subaleague Auto Garage - Specialists in Subaru mechanics and spare parts">
+    <meta name="keywords" content="auto garage, Subaru, vehicle services, car repair, Nairobi">
+    <title>Subaleague Auto Garage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('subaleague.j.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .header-left h1 {
+            font-size: 1.8em;
+            margin: 0;
+        }
+        .header-left h2 {
+            font-size: 1em;
+            font-weight: 400;
+            margin: 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li a {
+            color: rgb(4, 126, 14);
+            text-decoration: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        nav ul li a:hover {
+            background-color: #333;
+            border-radius: 5px;
+        }
+        .additional-content {
+            text-align: center;
+            color: black;
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            display: none;
+        }
+        .typing-effect {
+            display: inline;
+            color: blue;
+            border-right: 2px solid rgb(0, 47, 255);
+            white-space: nowrap;
+            overflow: hidden;
+            animation: blink 0.7s step-end infinite;
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        @media (max-width: 600px) {
+            .header-left h1 {
+                font-size: 1.5em;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin-bottom: 10px;
+            }
+            .additional-content {
+                width: 95%;
+                padding: 20px 10px;
+            }
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-left">
+        <h1>Subaleague Auto Garage</h1>
+        <h2>Specialists in Subaru mechanics and spare parts</h2>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a onclick="showSection('home')">Home</a></li>
+            <li><a onclick="showSection('services')">Services</a></li>
+            <li><a onclick="showSection('about')">About Us</a></li>
+            <li><a onclick="showSection('contact')">Contact</a></li>
+            <li><a onclick="showSection('testimonials')">Testimonials</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="additional-content" id="home">
+    <h1>Reliable Auto Repair Services</h1>
+    <p>We provide <span class="typing-effect" id="typingText"></span> for your Vehicle</p> <br><br>
+    <p><strong>Chief Engineer:</strong> Paul Malombe</p>
+    <p><strong>Founded:</strong> 2010</p>
+    <p><strong>Location:</strong> Kangundo Road, near K Mall, Nairobi, Kenya</p>
+    <p><strong>Google Live Location:</strong> 
+       <a href="https://www.google.com/maps/search/?api=1&query=Subaleague+Auto+Garage+near+K+Mall,+Kangundo+Road+Nairobi" target="_blank" style="color: blue;">View on Google Maps</a>
+    </p>
+    <p><strong>Working Hours:</strong><br> 
+        Monday - Friday: 8 AM - 6 PM<br> 
+        Saturday: 9 AM - 4 PM<br>
+        Closed on Sundays
+    </p>
+</div>
+
+<div class="additional-content" id="services">
+    <h2>Our Services</h2>
+    <ol>
+    <li>Oil Changes</li>
+    <li>Brake Repairs</li>
+    <li>Transmission Services</li>
+    <li>Engine Diagnostics</li>
+    <li>Tire Rotations and Replacements</li>
+    <li>Battery Testing and Replacement</li>
+    <li>Air Conditioning and Heating Services</li>
+    <li>Wheel Alignments</li>
+    <li>Suspension Repairs</li>
+    </ol>
+</div>
+
+<div class="additional-content" id="about">
+    <h2>About Us</h2>
+    <p style="color:rgb(192, 38, 38);">Welcome to Subaleague Auto Garage, the pioneers of cutting-edge technology where we turn the impossible into possible.</p><br>
+    <p>Subaleague Auto Garage is your trusted partner for all your automotive needs.</p><br>
+    <p>We are committed to providing the best services ever</p><br>
+    <p> Come to us for <strong> expertise </strong>and <strong>reliable </strong>services. </p>
+</div>
+
+<div class="additional-content" id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> <a href="mailto:paulmalombe94@gmail.com" style="color: blue;">paulmalombe94@gmail.com</a></p>
+    <p><strong>Phone:</strong> <a href="tel:+254706338620" style="color: blue;">+254 706338620</a></p>
+    <p><strong>Location:</strong> Along Kangundo Road Opposite Supa Loaf.</p>
+</div>
+
+<div class="additional-content" id="testimonials">
+    <h2>Testimonials</h2>
+    <p>"Excellent service! My Subaru runs like new!" - Jones</p>
+    <p>"Professional and trustworthy. Highly recommended!" - Mark</p>
+</div>
+
+<script>
+    alert('Welcome to Subaleague Auto Garage, the beasts of ever-growing technology where we unleash the impossibilities');
+
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.additional-content');
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+        const selectedSection = document.getElementById(sectionId);
+        if (selectedSection) {
+            selectedSection.style.display = 'block';
+        }
+    }
+
+    // Show home section by default
+    document.getElementById('home').style.display = 'block';
+
+    // Typing effect for "Expert Solutions" and "Reliable Solutions"
+    const texts = ["Expert", "Reliable"]; // Words that alternate
+    let index = 0;
+    let wordIndex = 0;
+
+    function typeText() {
+        let currentText = texts[index] + " Solutions"; // Concatenate with "Solutions"
+        document.getElementById('typingText').textContent = currentText.slice(0, wordIndex);
+        
+        wordIndex++;
+
+        // If wordIndex reaches the length of the current word, move to next word
+        if (wordIndex > currentText.length) {
+            wordIndex = 0;
+            index = (index + 1) % texts.length; // Switch between "Expert" and "Reliable"
+        }
+    }
+
+    setInterval(typeText, 300);
+</script>
+
+<footer>
+    <p>2024 @copyright. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
